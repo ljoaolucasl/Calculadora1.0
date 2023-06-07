@@ -1,25 +1,32 @@
 ﻿namespace Calculadora1._0.ConsoleApp.Calculadora
 {
-    public class Calculo : ICalculo
+    public class Calculo 
     {
-        public void Dividir(double n1, double n2)
+        public  double Dividir(double n1, double n2)
         {
-            throw new NotImplementedException();
+            double result = n1 / n2;
+            return result;
         }
 
-        public void Multiplicar(double n1, double n2)
+        public  double Multiplicar(double n1, double n2)
         {
-            throw new NotImplementedException();
+            double result = n1 * n2;
+            return result;
         }
 
-        public void Somar(double n1, double n2)
+        public double Somar(double n1, double n2)
         {
-            throw new NotImplementedException();
+            double result = n1 = n2;
+            return result;
         }
 
-        public void Subtrair(double n1, double n2)
+        public  double Subtrair(double n1, double n2)
         {
-            throw new NotImplementedException();
+            double result = n1 - n2;
+            return result;
+        }
+
+    
         }
     }
-}
+
