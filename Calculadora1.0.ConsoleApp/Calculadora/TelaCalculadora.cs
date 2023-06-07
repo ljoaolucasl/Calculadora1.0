@@ -39,6 +39,11 @@
 
         private void VisualizarHistorico()
         {
+            MostrarCabecalho(50, "Histórico de cálculos", ConsoleColor.DarkYellow);
+
+            foreach (string calculo in historico.AcessarHistorico)
+                Console.WriteLine(calculo);
+
             Console.ReadLine();
         }
 
@@ -47,6 +52,10 @@
             double[] numeros = ObterNumeros();
 
             double resultado = calculo.Somar(numeros[0], numeros[1]);
+
+            Console.WriteLine($"O resultado é {resultado}");
+
+            Console.ReadLine();
 
             historico.AdicionarHistorico($"{numeros[0]} + {numeros[1]} = {resultado}");
         }
@@ -57,6 +66,10 @@
 
             double resultado = calculo.Subtrair(numeros[0], numeros[1]);
 
+            Console.WriteLine($"O resultado é {resultado}");
+
+            Console.ReadLine();
+
             historico.AdicionarHistorico($"{numeros[0]} - {numeros[1]} = {resultado}");
         }
 
@@ -66,6 +79,10 @@
 
             double resultado = calculo.Multiplicar(numeros[0], numeros[1]);
 
+            Console.WriteLine($"O resultado é {resultado}");
+
+            Console.ReadLine();
+
             historico.AdicionarHistorico($"{numeros[0]} x {numeros[1]} = {resultado}");
         }
 
@@ -74,6 +91,10 @@
             double[] numeros = ObterNumeros();
 
             double resultado = calculo.Dividir(numeros[0], numeros[1]);
+
+            Console.WriteLine($"O resultado é {resultado}");
+
+            Console.ReadLine();
 
             historico.AdicionarHistorico($"{numeros[0]} / {numeros[1]} = {resultado}");
         }

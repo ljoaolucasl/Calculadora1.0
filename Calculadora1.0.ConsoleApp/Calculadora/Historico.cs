@@ -1,6 +1,4 @@
-﻿using System.Reflection.Metadata.Ecma335;
-
-namespace Calculadora1._0.ConsoleApp.Calculadora
+﻿namespace Calculadora1._0.ConsoleApp.Calculadora
 {
     public class Historico
     {
@@ -21,16 +19,6 @@ namespace Calculadora1._0.ConsoleApp.Calculadora
         public void LimparHistorico()
         {
             historico.Clear();
-        }
-
-        public void ImprimirHistorico()
-        {
-            Console.WriteLine("================= Histórico de cálculos: =================");
-
-            foreach (string calculo in historico)
-            {
-                Console.WriteLine($"{calculo}");
-            }
         }
     }
 }

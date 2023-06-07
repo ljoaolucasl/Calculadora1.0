@@ -1,10 +1,12 @@
-﻿namespace Calculadora1._0.ConsoleApp
+﻿using Calculadora1._0.ConsoleApp.Calculadora;
+
+namespace Calculadora1._0.ConsoleApp
 {
     public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            TelaCalculadora telaCalculadora = new TelaCalculadora();
         }
     }
 }
