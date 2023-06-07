@@ -1,8 +1,12 @@
-﻿namespace Calculadora1._0.ConsoleApp.Calculadora
+﻿using System.Reflection.Metadata.Ecma335;
+
+namespace Calculadora1._0.ConsoleApp.Calculadora
 {
     public class Historico
     {
         private List<string> historico;
+
+        public List<string> AcessarHistorico => historico;
 
         public Historico()
         {
